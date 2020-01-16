@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #282C34;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.game{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.gameRules{
+  flex-wrap: wrap;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+  color: #61DAFB;
+}
+.row{
+  display: flex;
+}
+.block{
+  width: 75px;
+  height: 75px;
+  border: 1px solid #61DAFB;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #54cc10;
+  color: #61DAFB;
+  transition-duration: 300ms;
+}
+.blockWin{
+  width: 75px;
+  height: 75px;
+  border: 1px solid #61DAFB;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #54cc10;
+  transition-duration: 300ms;
+}
+.blockLoose{
+  width: 75px;
+  height: 75px;
+  border: 1px solid #61DAFB;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff1050;
+  transition-duration: 300ms;
+}
+.arrowBlock{
+  color: #61DAFB;
+  padding: 10px;
+  margin: 10px;
 }
