@@ -17,6 +17,8 @@
   height: 100vh;
 }
 .gameRules{
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 h1{
@@ -69,4 +71,58 @@ h1{
   color: #61DAFB;
   padding: 10px;
   margin: 10px;
+}
+
+@media (max-width: 992px) {
+  .App{
+    flex-direction: column;
+  }
+  .block{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .blockWin{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .blockLoose{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .game{
+    height: 30vh;
+  }
+  .arrowBlock{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .App{
+    flex-direction: column;
+  }
+  .block{
+    width: 75px;
+    height: 75px;
+    border-radius: 25px;
+  }
+  .blockWin{
+    width: 75px;
+    height: 75px;
+    border-radius: 25px;
+  }
+  .blockLoose{
+    width: 75px;
+    height: 75px;
+    border-radius: 25px;
+  }
+  .game{
+    height: 50vh;
+  }
 }
