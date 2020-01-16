@@ -1,0 +1,2 @@
+# MazeJS
+Test for vacancy
